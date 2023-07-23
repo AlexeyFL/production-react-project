@@ -1,9 +1,9 @@
 import 'app/styles/index.scss';
-import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
 
 import React from 'react';
+import { StoryFn } from '@storybook/react';
 
-export const StyleDecorator = () => (Story) =>
+export const StyleDecorator = () => (Story: StoryFn) =>
   (
     <div className={`app`}>
       <Story />
